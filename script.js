@@ -4,7 +4,7 @@ document.getElementById('productInput').addEventListener('change', async (e) => 
     const formData = new FormData();
     formData.append('file', file);
     try {
-        const response = await fetch('YOUR_RENDER_BACKEND_URL/predict', {
+        const response = await fetch('https://product-price-thv2.onrender.com/predict', {
             method: 'POST',
             body: formData
         });
